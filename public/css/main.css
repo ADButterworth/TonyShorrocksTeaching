@@ -50,6 +50,7 @@ p {
     background: rgb(91,140,90);
     overflow-x: hidden; /* Disable horizontal scroll */
     padding: 20px 0px 20px 0px;
+    border-radius: 5px;
 }
 
 /* The navigation menu links */
@@ -60,6 +61,18 @@ p {
     font-size: 22px;
     color: #111d13;
     display: block;
+}
+
+.isDisabled {
+  color: #111d13 !important;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.isDisabled:hover {
+  color: #111d13 !important;
+  cursor: not-allowed;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -77,6 +90,16 @@ p {
 .main {
     margin-left: 190px; /* Same as the width of the sidebar + 10 */
     padding: 0px 10px;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */

@@ -9,12 +9,12 @@ app.set('view engine', 'pug');
 
 // Home Router
 app.get("/", function(req, res) {
-    res.redirect("/cv");
+    res.redirect("/teaching");
 });
 
 // Home Router
 app.get("/cv", function(req, res) {
-    res.render("home", {});
+    res.render("cv", {});
 });
 
 // Conducting Router
