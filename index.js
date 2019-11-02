@@ -7,12 +7,7 @@ app.use(express.static('public'));
 // set pug as the html templater
 app.set('view engine', 'pug');
 
-// Home Router
-app.get("/", function(req, res) {
-    res.redirect("/teaching");
-});
-
-// Home Router
+// CV Router
 app.get("/cv", function(req, res) {
     res.render("cv", {});
 });
@@ -28,7 +23,7 @@ app.get("/coaching", function(req, res) {
 });
 
 // Home Router
-app.get("/teaching", function(req, res) {
+app.get("/", function(req, res) {
     res.render("teaching", {});
 });
 
