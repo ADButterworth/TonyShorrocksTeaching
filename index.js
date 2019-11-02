@@ -32,10 +32,15 @@ app.get("/teaching", function(req, res) {
     res.render("teaching", {});
 });
 
+// Home Router
+app.get("/contact", function(req, res) {
+    res.render("contact", {});
+});
+
 // 404 Router
 // This is a generic router and must be last in the list to funtion correctly
 app.use(function(req, res) {
-    res.send("ERROR 404");
+    res.redirect("/teaching");
 });
 
 // Open the server on port 3000
