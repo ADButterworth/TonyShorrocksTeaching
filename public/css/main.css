@@ -21,7 +21,15 @@ h3 {
 }
 
 p {
-    font-size: 20;
+    font-size: 16pt;
+}
+
+i {
+    font-size: 16pt; 
+}
+
+li {
+    font-size: 16pt;
 }
 
 .quote {

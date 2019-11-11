@@ -32,6 +32,11 @@ app.get("/contact", function(req, res) {
     res.render("contact", {});
 });
 
+// Prof Dev Router
+app.get("/profdev", function(req, res) {
+    res.render("profdev", {});
+});
+
 // 404 Router
 // This is a generic router and must be last in the list to funtion correctly
 app.use(function(req, res) {
