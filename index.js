@@ -8,8 +8,8 @@ app.use(express.static('public'));
 app.set('view engine', 'pug');
 
 // Intro Router
-app.get("/intro", function(req, res) {
-    res.render("intro", {});
+app.get("/", function(req, res) {
+    res.render("Intro", {});
 });
 
 // CV Router
@@ -28,7 +28,7 @@ app.get("/coaching", function(req, res) {
 });
 
 // Home Router
-app.get("/", function(req, res) {
+app.get("/teaching", function(req, res) {
     res.render("teaching", {});
 });
 
