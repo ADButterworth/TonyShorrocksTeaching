@@ -7,6 +7,11 @@ app.use(express.static('public'));
 // set pug as the html templater
 app.set('view engine', 'pug');
 
+// Intro Router
+app.get("/intro", function(req, res) {
+    res.render("intro", {});
+});
+
 // CV Router
 app.get("/cv", function(req, res) {
     res.render("cv", {});
@@ -40,7 +45,7 @@ app.get("/profdev", function(req, res) {
 // 404 Router
 // This is a generic router and must be last in the list to funtion correctly
 app.use(function(req, res) {
-    res.redirect("/teaching");
+    res.redirect("/");
 });
 
 // Open the server on port 3000
