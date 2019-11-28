@@ -42,6 +42,11 @@ app.get("/profdev", function(req, res) {
     res.render("profdev", {});
 });
 
+// adjudicating Router
+app.get("/adjudicating", function(req, res) {
+    res.render("adjudicating", {});
+});
+
 // 404 Router
 // This is a generic router and must be last in the list to funtion correctly
 app.use(function(req, res) {
