@@ -1,51 +1,53 @@
+doctype html
+
 head
-    link(href="https://fonts.googleapis.com/css?family=Jomolhari|Montserrat&display=swap" rel="stylesheet")
-    link(rel="stylesheet" type="text/css" href="css/main.css")
-    title Tony Shorrocks - Coaching
-    meta(name="viewport" content="width=device-width, initial-scale=1")
+	// Required meta tags
+	meta(charset='utf-8')
+	meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+	// Bootstrap CSS
+	link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous')
+	script(src="https://kit.fontawesome.com/303bfca8f2.js" crossorigin="anonymous")
+	title Coaching
 
 body
-    .sidenav
-        a(href="/") Introduction
-        a(href="/teaching") Teaching
-        a(href="/coaching", class="current") Coaching
-        a(href="/profdev")  Professional Development
-        a(href="/conducting") Conducting
-        a(href="/adjudicating") Adjudicating
-        a(href="/cv") CV
-        a(href="/contact") Contact Me
+	.container
+		include ./includes/topBar.pug
+		+topbar("Coaching")
 
-    .main
-        h1 Coaching
+		p There can be no greater compliment from a fellow player in a chamber music setting than to be described as a Very Aware Player! Coaching groups to enhance and develop their skills so people can learn these skills is an unbounded joy in life as any serious player of chamber music will confirm, amateur or professional or anything in between.
 
-        p There can be no greater compliment from a fellow player in a chamber music setting than to be described as a Very Aware Player! Coaching groups to enhance and develop their skills so people can learn these skills is an unbounded joy in life as any serious player of chamber music will confirm, amateur or professional or anything in between.
+		p I have coached chamber music at the Dartington International Summer School, at various further and higher education institutions, Musical Passages in France, Spain and Italy and latterly in Kosovo and Italy for “Music,  A Bridge Between People”.
 
-        p I have coached chamber music at the Dartington International Summer School, at various further and higher education institutions, Musical Passages in France, Spain and Italy and latterly in Kosovo and Italy for “Music,  A Bridge Between People”.
+		br
 
-        br
+		h2 Testimony
 
-        h2 Testimony
+		p.ml-3
+			i Dear Tony, <br/> Thank you for everything! I have learned a lot from you and you are one of the most amazing, wonderful people I know. It was a pleasure to work, create and play with you. <br/> Thank you very much!!
 
-        p(class="tab")
-            i Dear Tony, <br/> Thank you for everything! I have learned a lot from you and you are one of the most amazing, wonderful people I know. It was a pleasure to work, create and play with you. <br/> Thank you very much!!"
+		p.text-muted
+			i Alja Bosjancic, Flute player in the Chamber orchestra of “Music, A Bridge Between People”, September 2019
 
-        p(class="tab2")
-            i Alja Bosjancic, Flute player in the Chamber orchestra of “Music, A Bridge Between People”, September 2019
+		br
 
-        br
+		p.ml-3
+			i Thank you again. I hope you don’t mind if I tell you what I really feel - that you are one of the best teachers and humans I have ever encountered and I really hope we can meet another time because getting taught by you is like finding what you already know, but without realising you did. Thank you again!
 
-        p(class="tab")
-            i Thank you again. I hope you don’t mind if I tell you what I really feel - that you are one of the best teachers and humans I have ever encountered and I really hope we can meet another time because getting taught by you is like finding what you already know, but without realising you did. Thank you again!
+		p.text-muted
+			i Freya Apelkvist, Principal Cello in the Symphony orchestra of “Music, a Bridge between People”, both 2018 and 2019
 
-        p(class="tab2")
-            i Freya Apelkvist, Principal Cello in the Symphony orchestra of “Music, a Bridge between People”, both 2018 and 2019
+		br
 
-        br
+		p.ml-3
+			i Dear Tony, <br/> Thank you for everything you did for us! You are a wonderful person and teacher and I really enjoyed learning from you. In only ten days I felt I progressed a lot, and your advice really helped. You made me see things differently and understand music better. I hope we can meet another time, it was a pleasure for me, and once again thank you a lot!
 
-        p.tab
-            i Dear Tony, <br/> Thank you for everything you did for us! You are a wonderful person and teacher and I really enjoyed learning from you. In only ten days I felt I progressed a lot, and your advice really helped. You made me see things differently and understand music better. I hope we can meet another time, it was a pleasure for me, and once again thank you a lot!
+		p.text-muted 
+			i Serban, cellist, "Music, A Bridge Between People" 2019
 
-        p.tab2 
-            i Serban, cellist, "Music, A Bridge Between People" 2019
+	// Optional JavaScript
+	// jQuery first, then Popper.js, then Bootstrap JS
+	script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
+	script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous')
+	script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous')
 
 

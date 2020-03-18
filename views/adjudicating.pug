@@ -1,33 +1,35 @@
+doctype html
+
 head
-    link(href="https://fonts.googleapis.com/css?family=Jomolhari|Montserrat&display=swap" rel="stylesheet")
-    link(rel="stylesheet" type="text/css" href="css/main.css")
-    title Tony Shorrocks - Coaching
-    meta(name="viewport" content="width=device-width, initial-scale=1")
+	// Required meta tags
+	meta(charset='utf-8')
+	meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+	// Bootstrap CSS
+	link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous')
+	script(src="https://kit.fontawesome.com/303bfca8f2.js" crossorigin="anonymous")
+	title Adjudicating
 
 body
-    .sidenav
-        a(href="/") Introduction
-        a(href="/teaching") Teaching
-        a(href="/coaching") Coaching
-        a(href="/profdev")  Professional Development
-        a(href="/conducting") Conducting
-        a(href="/adjudicating", class="current") Adjudicating
-        a(href="/cv") CV
-        a(href="/contact") Contact Me
+	.container
+		include ./includes/topBar.pug
+		+topbar("Adjudicating")
 
-    .main
-        h1 Adjudicating
+		h2 Testimony
 
-        h2 Testimony
+		p.ml-3 
+			i I had the pleasure of working with Tony during the annual music competition called Stella Polaris, which took place in Tórshavn from 31 st January to 2nd February 2019. Stella Polaris is a music competition for young, aspiring musicians under the age of 24 who are divided into three age groups. As organiser of the competition, part of my job was to find a panel of five judges to assess the participants. I contacted Tony to see if he would be interested in being the chairman of the panel. We also had one judge from Iceland and three Faroese judges. All four judges were very content with Tony’s efficiency and his ability to listen and take into account everyone’s opinion when trying to appoint the winners in every age group. Needless to say, it was no easy task seeing as there were 49 participants. Yet with Tony’s clear guidance and good spirit, the judges were able to reach a joint consensus.
 
-        p.tab 
-            i I had the pleasure of working with Tony during the annual music competition called Stella Polaris, which took place in Tórshavn from 31 st January to 2nd February 2019. Stella Polaris is a music competition for young, aspiring musicians under the age of 24 who are divided into three age groups. As organiser of the competition, part of my job was to find a panel of five judges to assess the participants. I contacted Tony to see if he would be interested in being the chairman of the panel. We also had one judge from Iceland and three Faroese judges. All four judges were very content with Tony’s efficiency and his ability to listen and take into account everyone’s opinion when trying to appoint the winners in every age group. Needless to say, it was no easy task seeing as there were 49 participants. Yet with Tony’s clear guidance and good spirit, the judges were able to reach a joint consensus.
+		p.ml-3 
+			i Apart from this I also know Tony from The University of Liverpool where I studied music in 2011-2014. Tony was a well-liked and respected teacher amongst us students and we all enjoyed his classes very much.
 
-        p.tab 
-            i Apart from this I also know Tony from The University of Liverpool where I studied music in 2011-2014. Tony was a well-liked and respected teacher amongst us students and we all enjoyed his classes very much.
+		p.ml-3
+			i I want to thank Tony for agreeing to take part in Stella Polaris 2019 and I wish him best of luck in his future endeavors. I know he will do great!
 
-        p.tab
-            i I want to thank Tony for agreeing to take part in Stella Polaris 2019 and I wish him best of luck in his future endeavors. I know he will do great!
+		p.text-muted
+			i Edith Dahl Jakobsen, Teacher at the Music School in Tórshavn, Faroe Islands
 
-        p.tab2
-            i Edith Dahl Jakobsen, Teacher at the Music School in Tórshavn, Faroe Islands
+	// Optional JavaScript
+	// jQuery first, then Popper.js, then Bootstrap JS
+	script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
+	script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous')
+	script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous')

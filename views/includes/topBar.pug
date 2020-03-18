@@ -1,0 +1,18 @@
+mixin topbar(page)
+	.row.mb-4
+		.col-5.col-sm-5.col-md-3.col-lg-2.col-xl-2(style="background: rgb(91,140,90);")
+			nav.nav.navbar-light.navbar-toggleable-sm
+			.d-flex.justify-content-center.mt-2
+				button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarWEX' aria-controls='navbarSupportedContent1' aria-expanded='false' aria-label='Toggle navigation')
+					span.narbar-toggler-icon
+						i(class="fas fa-bars")
+			#navbarWEX.navbar-collapse.collapse.flex-column.text-dark
+				a.nav-link.text-center.px-0.text-dark.mt-2.active(href='/teaching') Teaching
+				a.nav-link.text-center.px-0.text-dark.mt-2.active(href='/coaching') Coaching
+				a.nav-link.text-center.px-0.text-dark.mt-2.active(href='/profdev') Professional Development
+				a.nav-link.text-center.px-0.text-dark.mt-2.active(href='/conducting') Conducting
+				a.nav-link.text-center.px-0.text-dark.mt-2.active(href='/adjudicating') Adjudicating
+				a.nav-link.text-center.px-0.text-dark.mt-2.active(href='/cv') CV
+				a.nav-link.text-center.px-0.text-dark.mt-2.active(href='/contact') Contact Me!
+		.col-7.col-sm-7.col-md-9.col-lg-10.col-xl-10
+			h1= page

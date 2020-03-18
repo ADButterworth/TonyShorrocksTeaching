@@ -1,35 +1,37 @@
+doctype html
+
 head
-    link(href="https://fonts.googleapis.com/css?family=Jomolhari|Montserrat&display=swap" rel="stylesheet")
-    link(rel="stylesheet" type="text/css" href="css/main.css")
-    title Tony Shorrocks - Conducting
-    meta(name="viewport" content="width=device-width, initial-scale=1")
-        
+	// Required meta tags
+	meta(charset='utf-8')
+	meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+	// Bootstrap CSS
+	link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous')
+	script(src="https://kit.fontawesome.com/303bfca8f2.js" crossorigin="anonymous")
+	title Conducting
+
 body
-    .sidenav
-        a(href="/") Introduction
-        a(href="/teaching") Teaching
-        a(href="/coaching") Coaching
-        a(href="/profdev") Professional Development
-        a(href="/conducting", class="current") Conducting
-        a(href="/adjudicating")  Adjudicating
-        a(href="/cv") CV
-        a(href="/contact") Contact Me
+	.container
+		include ./includes/topBar.pug
+		+topbar("Conducting")
 
-    .main
-        h1 Conducting / Directing
+		p I have conducted several amateur orchestras, including for 20 years the Liverpool University Symphony orchestra who I took on tours to Germany, France, and Italy where we recieived 5 consequetive standing ovations for performances of Rachmaninoff second symphony.
 
-        p I have conducted several amateur orchestras, including for 20 years the Liverpool University Symphony orchestra who I took on tours to Germany, France, and Italy where we recieived 5 consequetive standing ovations for performances of Rachmaninoff second symphony.
+		p My aim in rehearsals is to enable the players to learn about how the music works, what the performers can do about it, what they can learn as players/musicians and what can be used as a growing repertoire of transferable skills and orchestral techniques. My experience in many different ensembles and repertoires has given me a wide knowledge of "how" things can be achieved in musical performance and that is what I try and pass on to  people.
 
-        p My aim in rehearsals is to enable the players to learn about how the music works, what the performers can do about it, what they can learn as players/musicians and what can be used as a growing repertoire of transferable skills and orchestral techniques. My experience in many different ensembles and repertoires has given me a wide knowledge of "how" things can be achieved in musical performance and that is what I try and pass on to  people.
+		p As with all my teaching, a "do this" or "do that" approach is always supported by a "why" explanation" and a "how". A teachers role is to get others to do learning, not obeying orders!
 
-        p As with all my teaching, a "do this" or "do that" approach is always supported by a "why" explanation" and a "how". A teachers role is to get others to do learning, not obeying orders!
+		br
 
-        br
+		h2 Testimony
 
-        h2 Testimony
+		p.ml-3
+			i I can’t say how much I owe to Tony Shorrocks as a violinist. By listening to him and taking it seriously I have made a huge growth in confidence and technical ability. Whereas I used to be lost at the back of the seconds, mostly lost, I am now in the firsts with Crosby Symphony Orchestra, leading my own string quartet, and able to make a decent shot of Stravinsky, Sibelius, and Mahler. Tony is always ready to listen if you take him a playing problem or an instrument-issue like a hissing string; he will sort it out with an effective remedy and he will give practical advice about choosing an instrument, whether to join this or that orchestra, or about the proper size of shoulder rest. Not to mention rhythm, pulse, bow grip, arm angle and so on … stuff that really begins to make a difference straight away!
 
-        p(class="tab")
-            i I can’t say how much I owe to Tony Shorrocks as a violinist. By listening to him and taking it seriously I have made a huge growth in confidence and technical ability. Whereas I used to be lost at the back of the seconds, mostly lost, I am now in the firsts with Crosby Symphony Orchestra, leading my own string quartet, and able to make a decent shot of Stravinsky, Sibelius, and Mahler. Tony is always ready to listen if you take him a playing problem or an instrument-issue like a hissing string; he will sort it out with an effective remedy and he will give practical advice about choosing an instrument, whether to join this or that orchestra, or about the proper size of shoulder rest. Not to mention rhythm, pulse, bow grip, arm angle and so on … stuff that really begins to make a difference straight away!
+		p.text-muted
+			i Dr Frederick Jones, Violinist, October 2019
 
-        p(class="tab2")
-            i Dr Frederick Jones, Violinist, October 2019
+	// Optional JavaScript
+	// jQuery first, then Popper.js, then Bootstrap JS
+	script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
+	script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous')
+	script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous')

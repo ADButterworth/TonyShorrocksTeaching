@@ -1,37 +1,40 @@
+doctype html
+
 head
-    link(href="https://fonts.googleapis.com/css?family=Jomolhari|Montserrat&display=swap" rel="stylesheet")
-    link(rel="stylesheet" type="text/css" href="css/main.css")
-    title Tony Shorrocks
-    meta(name="description" content="Tony Shorrocks is a string instrument teacher with vast experience, located in Liverpool")
-    meta(name="viewport" content="width=device-width, initial-scale=1")
+	// Required meta tags
+	meta(charset='utf-8')
+	meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+	// Bootstrap CSS
+	link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous')
+	script(src="https://kit.fontawesome.com/303bfca8f2.js" crossorigin="anonymous")
+	title Introduction
 
 body
-    .sidenav
-        a.current(href="/") Introduction
-        a(href="/teaching") Teaching
-        a(href="/coaching") Coaching
-        a(href="/profdev") Professional Development
-        a(href="/conducting") Conducting
-        a(href="/adjudicating")  Adjudicating
-        a(href="/cv") CV
-        a(href="/contact") Contact Me
+	.container
+		include ./includes/topBar.pug
+		+topbar("Introduction")
 
-    .main
-        h1 Introduction
+		.d-flex.justify-content-center
+			img.rounded-circle(src='img/tony1.jpg' style="object-fit: cover; width:300px;")
 
-        img(src="img/tony1.jpg")
+		.row.justify-content-center.mt-2
+			.col-4
+				blockquote.blockquote.text-center
+					p.mb-0
+						i Tell me, I forget;
+					p.mb-0
+						i Show me, I might remember;
+					p.mb-0
+						i Involve me, I understand and learn.
 
-        p(style="text-align: center; margin: 5px; margin-top: 25px")
-            i Tell me, I forget;
+		p Welcome to this website about my instrumental teaching, chamber music coaching and training, directing and conducting coaching, teaching and performance and professional development mentoring.
+		
+		p I make no apologies for the word count - I hope what is here will be of interest to all who have an interest in the subjects and that at least some of this will be found to be useful. I offer input to all the areas covered in the menu; Teaching, Coaching, Professional Development as lessons or workshops and if any aspects are of interest please get in touch.
+		
+		p All testimonials are verbatim and un-doctored, and many are unsolicited. I have been both rewarded and humbled in collecting them and seeing them all in one place!
 
-        p(style="text-align: center; margin: 5px;")
-            i Show me, I might remember;
-
-        p(style="text-align: center; margin: 5px;")
-            i Involve me, I understand and learn.
-
-        p Welcome to this website about my instrumental teaching, chamber music coaching and training, directing and conducting coaching, teaching and performance and professional development mentoring.
-        
-        p I make no apologies for the word count - I hope what is here will be of interest to all who have an interest in the subjects and that at least some of this will be found to be useful. I offer input to all the areas covered in the menu; Teaching, Coaching, Professional Development as lessons or workshops and if any aspects are of interest please get in touch.
-        
-        p All testimonials are verbatim and un-doctored, and many are unsolicited. I have been both rewarded and humbled in collecting them and seeing them all in one place!
+	// Optional JavaScript
+	// jQuery first, then Popper.js, then Bootstrap JS
+	script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
+	script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous')
+	script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous')

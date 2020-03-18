@@ -1,24 +1,29 @@
+doctype html
+
 head
-    link(href="https://fonts.googleapis.com/css?family=Jomolhari|Montserrat&display=swap" rel="stylesheet")
-    link(rel="stylesheet" type="text/css" href="css/main.css")
-    title Tony Shorrocks - Contact Me
-    meta(name="viewport" content="width=device-width, initial-scale=1")
+	// Required meta tags
+	meta(charset='utf-8')
+	meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+	// Bootstrap CSS
+	link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous')
+	script(src="https://kit.fontawesome.com/303bfca8f2.js" crossorigin="anonymous")
+	title Contact Me!
 
 body
-    .sidenav
-        a(href="/") Introduction
-        a(href="/teaching") Teaching
-        a(href="/coaching") Coaching
-        a(href="/profdev") Professional Development
-        a(href="/conducting") Conducting
-        a(href="/adjudicating") Adjudicating
-        a(href="/cv") CV
-        a(href="/contact", class="current") Contact Me
+	.container
+		include ./includes/topBar.pug
+		+topbar("Contact")
 
-    .main
-        h1 Contact me
+		.d-flex.justify-content-center.mb-2
+			img.rounded-circle(src='img/tony2.jpg' style="object-fit: cover; width:300px;")
 
-        img(src="img/tony2.jpg")
+		.row.justify-content-center.mt-2
+			.col-4.text-center
+				h2 eMail:
+				a(href='mailto:tonyteachervlnvla@gmail.com') tonyteachervlnvla@gmail.com
 
-        h2 eMail:
-        h3 tonyteachervlnvla(at)gmail(dot)com
+	// Optional JavaScript
+	// jQuery first, then Popper.js, then Bootstrap JS
+	script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
+	script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous')
+	script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous')
