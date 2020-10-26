@@ -7,6 +7,12 @@ app.use(express.static('public'));
 // set pug as the html templater
 app.set('view engine', 'pug');
 
+let visits = 0; 
+app.get(function (req, res, next) {
+    visits++;
+    next();
+});
+
 // Intro Router
 app.get("/", function(req, res) {
     res.render("Intro", {});
@@ -42,10 +48,14 @@ app.get("/profdev", function(req, res) {
     res.render("profdev", {});
 });
 
-// adjudicating Router
+// Adjudicating Router
 app.get("/adjudicating", function(req, res) {
     res.render("adjudicating", {});
 });
+
+// Video Streamer
+var videoStreamer = require('./routers/video');
+app.use("/video", videoStreamer);
 
 // 404 Router
 // This is a generic router and must be last in the list to funtion correctly
