@@ -1,3 +1,5 @@
+// stolen af from https://webomnizz.com/video-stream-example-with-nodejs-and-html5/
+
 var express = require('express'),
     router = express.Router();
 
